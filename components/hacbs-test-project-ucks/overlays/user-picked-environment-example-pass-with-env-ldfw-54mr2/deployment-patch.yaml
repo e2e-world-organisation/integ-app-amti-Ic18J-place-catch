@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-ucks
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/quay-or-not-to-quay/nbe-e2e-pygc-tenant/integ-app-amti/hacbs-test-project-ucks@sha256:9ede7e514c6f07e60b4aa05ecc019bb17902f382531f9cb12ee7a3261a931c89
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
